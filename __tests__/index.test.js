@@ -90,7 +90,7 @@ describe("isAttending", () => {
     });
 });
 
-describe.only("hasMultipleCats", () => {
+describe("hasMultipleCats", () => {
     test("should return an empty array when passed empty", () => {
         expect(hasMultipleCats([])).toEqual([]);
     });
@@ -148,7 +148,7 @@ describe.only("hasMultipleCats", () => {
     });
 });
 
-describe.skip("multiplyByTwo", () => {
+describe("multiplyByTwo", () => {
     test("should return an empty array when passed empty", () => {
         expect(multiplyByTwo([])).toEqual([]);
     });
@@ -172,7 +172,7 @@ describe.skip("multiplyByTwo", () => {
     });
 });
 
-describe.skip("makeGuestList", () => {
+describe("makeGuestList", () => {
     test("should return an empty array when passed empty", () => {
         expect(makeGuestList([])).toEqual([]);
     });
@@ -215,7 +215,7 @@ describe.skip("makeGuestList", () => {
     });
 });
 
-describe.skip("cancelMemberships", () => {
+describe("cancelMemberships", () => {
     test("should return an empty array when passed empty", () => {
         expect(cancelMemberships([])).toEqual([]);
     });

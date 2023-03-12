@@ -34,14 +34,28 @@ function hasMultipleCats(people) {
 
 // .map will return an array the same length as the input. It will perform a function/operation on each element in the array
 
-function multiplyByTwo(numbers) {}
+function multiplyByTwo(numbers) {
+    const newArr = numbers.map((num) => num * 2);
+    return newArr;
+};
 
-function makeGuestList(attendees) {}
+function makeGuestList(attendees) {
+    const newArr = attendees.map((person) => person.name);
+    return newArr;
+};
 
 function cancelMemberships(members) {
-    // think about what you want in the array at the end
-}
-
+    const mappedArr = members.map((person) => {
+        if (person.status === "cancelled") {
+            return person;
+        }
+        // copy the object first to retain all the keys and values
+        // add status key after copying so it overwrites the existing status key and value
+        return {...person, status: "cancelled"}
+    });
+    return mappedArr;
+};
+ // think about what you want in the array at the end
 module.exports = {
     isAttending,
     belowTen,
