@@ -32,7 +32,7 @@ describe("belowTen", () => {
     });
 });
 
-describe.skip("isAttending", () => {
+describe("isAttending", () => {
     test("should return an empty array when passed empty", () => {
         expect(isAttending([])).toEqual([]);
     });
@@ -90,7 +90,7 @@ describe.skip("isAttending", () => {
     });
 });
 
-describe.skip("hasMultipleCats", () => {
+describe.only("hasMultipleCats", () => {
     test("should return an empty array when passed empty", () => {
         expect(hasMultipleCats([])).toEqual([]);
     });

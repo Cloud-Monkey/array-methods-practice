@@ -6,11 +6,27 @@ Use .filter when you want to remove things from an array - it will return a new 
 
 */
 
-function belowTen(numbers) {}
+function belowTen(numbers) {
+    const newArr = numbers.filter((num) => num < 10);
+    return newArr;
+};
 
-function isAttending(replies) {}
+function isAttending(replies) {
+    const newArr = replies.filter((reply) => reply.confirmed);
+    return newArr;
+};
 
-function hasMultipleCats(people) {}
+function hasMultipleCats(people) {
+    // filter can only be applied to an array data type
+    // filter always returns a new array
+    const newArr = people.filter((person) => {
+        // first argument is the singular item in the array that filter gets from looping
+        // my conditional must be in the return of filter
+        return person.catCount >= 2
+    });
+    // function must return something too!
+    return newArr;
+};
 
 /**********************************************************************************************/
 
