@@ -25,7 +25,7 @@ function hasMultipleCats(people) {
     // my conditional must be in the return of filter
     return person.catCount >= 2;
   });
-  // function must return something too!
+  // function must return something too! Otherwise we will get undefined.
   return newArr;
 }
 
