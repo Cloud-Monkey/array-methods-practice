@@ -12,7 +12,7 @@ function belowTen(numbers) {
 }
 
 function isAttending(replies) {
-  //   console.log(replies, "<----here is the replies logged!!");
+  //console.log(replies, "<----here is the replies logged!!");
   const newArr = replies.filter((reply) => reply.confirmed);
   return newArr;
 }
@@ -36,6 +36,7 @@ function hasMultipleCats(people) {
 // .map will return an array the same length as the input. It will perform a function/operation on each element in the array
 
 function multiplyByTwo(numbers) {
+  //   console.log(numbers, "<-----Here is the number's log!!");
   const newArr = numbers.map((num) => num * 2);
   return newArr;
 }
