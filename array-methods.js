@@ -42,6 +42,7 @@ function multiplyByTwo(numbers) {
 }
 
 function makeGuestList(attendees) {
+  // console.log(attendees, "<---Here is the attendees log!")
   const newArr = attendees.map((person) => person.name);
   return newArr;
 }
