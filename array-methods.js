@@ -12,7 +12,7 @@ function belowTen(numbers) {
 }
 
 function isAttending(replies) {
-  console.log(replies, "<----here is the replies logged!!");
+  //   console.log(replies, "<----here is the replies logged!!");
   const newArr = replies.filter((reply) => reply.confirmed);
   return newArr;
 }
